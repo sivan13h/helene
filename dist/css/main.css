@@ -72,7 +72,7 @@ body::before {
   z-index: -1; }
 
 .showcase::before {
-  background-image: url("./images/showcase.jpg");
+  background-image: url("../images/showcase.jpg");
   background-attachment: fixed;
   opacity: 0.8; }
 
@@ -511,7 +511,7 @@ footer {
       width: 100%;
       padding: 10px; }
       #form .container .form-head::before {
-        background-image: url("./images/showcase.jpg");
+        background-image: url("../images/showcase.jpg");
         opacity: 0.3;
         z-index: -1; }
     #form .container .contact-details {
