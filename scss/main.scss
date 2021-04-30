@@ -39,7 +39,7 @@ a {
 
 .container {
   @extend %centered-flex;
-  position: relative;
+
   flex-direction: column;
   max-width: 1400px;
   border-bottom: 1px solid rgba($color: #3b3a3a94, $alpha: 0.3);
@@ -741,6 +741,22 @@ footer {
     }
     .copy {
       text-align: right;
+    }
+  }
+  #about {
+    .about-content {
+      &::before {
+        opacity: 0.4;
+        right: -120px;
+        top: -90px;
+      }
+    }
+  }
+  #form {
+    &::before {
+      opacity: 0.4;
+      right: -120px;
+      top: -90px;
     }
   }
 }

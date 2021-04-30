@@ -71,7 +71,6 @@ a {
   box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.2); }
 
 .container {
-  position: relative;
   flex-direction: column;
   max-width: 1400px;
   border-bottom: 1px solid rgba(59, 58, 58, 0.3);
@@ -570,7 +569,15 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 20px 10px; }
   footer .copy {
-    text-align: right; } }
+    text-align: right; }
+  #about .about-content::before {
+    opacity: 0.4;
+    right: -120px;
+    top: -90px; }
+  #form::before {
+    opacity: 0.4;
+    right: -120px;
+    top: -90px; } }
 
 .start-quote {
   margin-left: 20px; }
