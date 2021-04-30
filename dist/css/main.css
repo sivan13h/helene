@@ -440,12 +440,16 @@ footer {
   #form .form__field:required, #form .form__field:invalid {
     box-shadow: none; }
 
+#contact {
+  overflow: hidden; }
+
 #form {
   position: relative; }
 
 #about {
   position: relative;
-  padding-top: 66px; }
+  padding-top: 66px;
+  overflow: hidden; }
   #about .about-content {
     flex-direction: column;
     position: relative; }

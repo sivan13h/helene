@@ -537,6 +537,9 @@ footer {
   }
 }
 // contact page -----------------------
+#contact {
+  overflow: hidden;
+}
 
 #form {
   position: relative;
@@ -546,6 +549,7 @@ footer {
 #about {
   position: relative;
   padding-top: 66px;
+  overflow: hidden;
 
   .about-content {
     @extend %centered-flex;
