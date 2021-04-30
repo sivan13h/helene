@@ -408,6 +408,7 @@ footer {
 
 // form------------
 #form {
+  overflow: hidden;
   width: 100vw;
 
   &:before {
@@ -541,9 +542,6 @@ footer {
   overflow: hidden;
 }
 
-#form {
-  position: relative;
-}
 // about page ---------------------------------
 
 #about {

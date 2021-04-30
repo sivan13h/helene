@@ -349,6 +349,7 @@ footer {
     padding: 0 20px; }
 
 #form {
+  overflow: hidden;
   width: 100vw;
   /* reset input */ }
   #form:before {
@@ -442,9 +443,6 @@ footer {
 
 #contact {
   overflow: hidden; }
-
-#form {
-  position: relative; }
 
 #about {
   position: relative;
