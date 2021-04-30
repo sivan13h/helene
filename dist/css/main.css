@@ -186,7 +186,7 @@ body::before {
   height: 100vh; }
   .showcase::before {
     content: "";
-    background: url("/dist/images/showcase-Background.jpg") center;
+    background: url("../images/showcase-Background.jpg") center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -207,7 +207,7 @@ body::before {
       font-size: 1.2rem;
       font-weight: 200; }
     .showcase .showcase-content button {
-      background: url(/dist/images/read-more.jpg) center;
+      background: url("../images/read-more.jpg") center;
       background-size: cover;
       color: white;
       border: none;
@@ -259,11 +259,11 @@ body::before {
     .yoga-buttons button:hover {
       transform: translateY(-3px); }
     .yoga-buttons button:nth-child(1) {
-      background: url("/dist/images/Square_3.jpg") center; }
+      background: url("../images/Square_3.jpg") center; }
     .yoga-buttons button:nth-child(2) {
-      background: url("/dist/images/Square_2.jpg") center; }
+      background: url("../images/Square_2.jpg") center; }
     .yoga-buttons button:nth-child(3) {
-      background: url("/dist/images/Square_1.jpg") center; }
+      background: url("../images/Square_1.jpg") center; }
 
 .card {
   height: 550px;
@@ -312,7 +312,7 @@ body::before {
       bottom: 0;
       align-self: center;
       margin-bottom: 30px;
-      background: url(/dist/images/read-more.jpg) center;
+      background: url("../images/read-more.jpg") center;
       background-size: cover;
       color: white;
       font-size: 0.8rem;
@@ -342,7 +342,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/dist/images/footer-background.jpg) center;
+    background: url("../images/footer-background.jpg") center;
     background-size: cover;
     opacity: 0.8;
     z-index: -1; }
