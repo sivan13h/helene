@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn:focus {
   box-shadow: none; }
 
@@ -17,6 +18,7 @@ div > .headline-line {
 .section-odd, .section-even {
   padding: 0;
   display: flex;
+  width: 100%;
   margin: 80px 0; }
   .section-odd .section-img, .section-even .section-img {
     width: 45%;
@@ -60,13 +62,19 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  line-height: 2rem; }
+  line-height: 2rem;
+  overflow-x: hidden; }
 
 h1 {
   font-family: "Amatic SC", cursive; }
 
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    color: inherit; }
+
 body::before {
-  background: url("../images/body.jpg");
   opacity: 0.4;
   z-index: -1; }
 
@@ -74,7 +82,7 @@ body::before {
   width: 95%;
   margin: 20px auto;
   background-color: white;
-  box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.2); }
+  box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.2); }
 
 .container {
   flex-direction: column;
@@ -103,7 +111,7 @@ body::before {
   font-family: "Merienda", cursive;
   font-size: 1.5rem;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   top: 0;
   transition: background 0.3s; }
@@ -111,9 +119,7 @@ body::before {
     margin: 0; }
   .navbar .home-link {
     color: rgba(0, 0, 0, 0.8);
-    padding-left: 10px;
     font-size: 1.2rem;
-    float: left;
     text-decoration: none; }
   .navbar .nav-link {
     margin: 0 15px;
@@ -174,9 +180,21 @@ body::before {
 .showcase {
   position: relative;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   height: 100vh; }
+  .showcase::before {
+    content: "";
+    background: url("/dist/images/showcase-Background.jpg") center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8; }
   .showcase .showcase-content {
     border: none;
     z-index: 1;
@@ -189,7 +207,8 @@ body::before {
       font-size: 1.2rem;
       font-weight: 200; }
     .showcase .showcase-content button {
-      background-color: #ffd597;
+      background: url(/dist/images/read-more.jpg) center;
+      background-size: cover;
       color: white;
       border: none;
       border-radius: 3px;
@@ -204,10 +223,10 @@ body::before {
       .showcase .showcase-content button:hover {
         background-color: #fddcaa; }
   .showcase .showcase-img {
-    width: 50%;
-    height: 50%; }
+    width: 30%; }
     .showcase .showcase-img img {
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
   .showcase .arrow {
     position: absolute !important;
     bottom: 0 !important;
@@ -220,17 +239,15 @@ body::before {
       transform: translateY(10px); }
 
 .yoga-buttons {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   margin-top: 20px; }
   .yoga-buttons button {
-    width: 100px;
-    height: 100px;
-    margin: 0 30px;
-    border-radius: 100%;
+    padding: 20px 50px;
     border: none;
-    background-color: #ffd597;
-    padding: 10px;
+    border-radius: 3px;
+    background-size: cover;
     line-height: 1.5;
     cursor: pointer;
     color: white;
@@ -240,10 +257,16 @@ body::before {
     .yoga-buttons button:focus {
       outline: none; }
     .yoga-buttons button:hover {
-      background-color: #ffcb7e;
       transform: translateY(-3px); }
+    .yoga-buttons button:nth-child(1) {
+      background: url("/dist/images/Square_3.jpg") center; }
+    .yoga-buttons button:nth-child(2) {
+      background: url("/dist/images/Square_2.jpg") center; }
+    .yoga-buttons button:nth-child(3) {
+      background: url("/dist/images/Square_1.jpg") center; }
 
 .card {
+  height: 550px;
   border-radius: 0;
   overflow: hidden;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -272,6 +295,8 @@ body::before {
     text-align: center;
     padding-top: 5px; }
   .card .card-text {
+    display: flex;
+    align-items: center;
     margin-top: 20px;
     font-size: 0.9rem;
     line-height: 1.5rem; }
@@ -286,7 +311,14 @@ body::before {
       position: absolute;
       bottom: 0;
       align-self: center;
-      margin-bottom: 10px; }
+      margin-bottom: 30px;
+      background: url(/dist/images/read-more.jpg) center;
+      background-size: cover;
+      color: white;
+      font-size: 0.8rem;
+      transition: transform 0.1s ease-in; }
+      .card .card-body button:hover {
+        transform: translateY(-1px); }
 
 #inspiration {
   height: 400px;
@@ -299,18 +331,30 @@ body::before {
 
 footer {
   display: flex;
-  flex-direction: column;
-  padding: 20px 100px;
   position: relative;
-  color: white;
-  background: rgba(211, 211, 211, 0.829); }
+  flex-direction: column;
+  position: relative;
+  color: white; }
+  footer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(/dist/images/footer-background.jpg) center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1; }
   footer .footer-items {
-    width: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 50px 20px; }
   footer .legal {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding: 0 20px; }
 
 #form {
   width: 100vw;
@@ -435,8 +479,6 @@ footer {
     gap: 20px; } }
 
 @media (min-width: 768px) {
-  .card {
-    height: 450px; }
   .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -448,9 +490,15 @@ footer {
   .show {
     display: none; } }
 
+@media screen and (max-width: 1090px) {
+  .card-deck .card {
+    height: 450px; } }
+
 @media screen and (max-width: 992px) {
   .container-main {
-    padding: 0; } }
+    padding: 0; }
+  .card-deck .card {
+    height: 480px; } }
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -474,29 +522,14 @@ footer {
     padding-left: 40px !important; }
   .wrap {
     padding-top: 0 !important; }
-  .testim .arrow {
-    font-size: 1rem; }
-    .testim .arrow.left {
-      left: 0; }
-    .testim .arrow.right {
-      right: 0; }
-  .testim .cont div p {
-    line-height: 1rem;
-    font-size: 1rem; }
+  .card-deck .card {
+    height: 540px; }
   .form-box {
     flex-direction: column-reverse; }
     .form-box .map {
       justify-content: center;
       margin-top: 20px;
       height: 300px; }
-  #achievments h1 {
-    font-size: 2rem; }
-  #achievments .achievments-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px; }
-    #achievments .achievments-box .achievment h5 {
-      font-size: 1rem; }
   #about img {
     width: 30% !important; }
   #about h1 {
@@ -520,6 +553,8 @@ footer {
     margin-bottom: 30px !important;
     width: 90%;
     margin: auto; }
+  .card-deck .card {
+    height: 480px; }
   #about img {
     width: 40% !important; }
   #about p {
@@ -527,9 +562,38 @@ footer {
     width: 90% !important; } }
 
 @media screen and (max-width: 480px) {
+  .yoga-button {
+    padding: 10px 20px !important; }
   .navbar {
     padding: 0 10px; }
   .form-content {
     padding-left: 0 !important; }
   .contact-form {
-    width: 100%; } }
+    width: 100%; }
+  footer .footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 10px; }
+  footer .copy {
+    text-align: right; } }
+
+.start-quote {
+  margin-left: 20px; }
+
+.quote {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto; }
+
+.credit {
+  display: inline-block;
+  font-family: "Waiting for the Sunrise", cursive;
+  margin: 20px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500; }
+  .credit::before {
+    content: "⸛ ";
+    vertical-align: middle;
+    font-size: 1.4rem; }

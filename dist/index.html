@@ -27,6 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
@@ -56,7 +61,7 @@
   <body>
     <!-- header (nav+showcase) -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light top">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="./index.html"
           ><img src="./images/logo.jpg" alt="" width="60px" height="60px"
         /></a>
@@ -158,14 +163,14 @@
             <div class="yoga-buttons">
               <button
                 type="button"
-                class="private-button"
+                class="yoga-button private-button"
                 data-toggle="modal"
                 data-target="#modal5"
               >
                 Private Lessons
               </button>
-              <button class="group-button">Group Lessons</button>
-              <button class="business-button">Business</button>
+              <button class="yoga-button group-button">Group Lessons</button>
+              <button class="yoga-button business-button">Business</button>
             </div>
           </div>
         </article>
@@ -208,7 +213,7 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 class="card-title">Ayurveda Masage</h5>
+                <h5 class="card-title">Ayurveda</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
@@ -233,7 +238,7 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 class="card-title">Fußreflexzonen Massage</h5>
+                <h5 class="card-title">Fußreflexzonen</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
@@ -258,7 +263,7 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 class="card-title">Tai-Yoga-Massage</h5>
+                <h5 class="card-title">Tai-Yoga</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
@@ -284,7 +289,7 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <h5 class="card-title">Klassische Massagen</h5>
+                <h5 class="card-title">Klassische</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
@@ -308,7 +313,16 @@
 
       <!-- inspiration -->
       <section id="inspiration">
-        <div class="inspiration-sentence">"A beautiful sentence"</div>
+        <div class="inspiration-sentence">
+          <div class="text">
+            <i class="start-quote fas fa-quote-left"></i>
+            <p class="quote">
+              Yoga does not just change the way we see things, it transforms the
+              person who sees.
+            </p>
+            <p class="credit">B.K.S Iyengar</p>
+          </div>
+        </div>
       </section>
     </section>
 
@@ -548,10 +562,12 @@
       </div>
       <div class="legal">
         <div class="legal-pages">
-          <span class="impressum">Impressum</span>
-          <span class="datenschutz">Datenschutz</span>
+          <a class="impressum" href="#">Impressum</a>
+          <a class="datenschutz" href="#">Datenschutz</a>
         </div>
-        <p>Copyright &copy 2020 - Helene Engelbach All Rights Reserved</p>
+        <p class="copy">
+          Copyright &copy 2020 - Helene Engelbach All Rights Reserved
+        </p>
       </div>
     </footer>
 
