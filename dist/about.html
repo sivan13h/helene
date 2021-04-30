@@ -26,8 +26,19 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;600&family=Merienda:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- animate -->
@@ -46,56 +57,55 @@
   </head>
   <body>
     <!-- header (nav+showcase) -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light top">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./images/logo.jpg" alt="" width="60px" height="60px"
-        /></a>
-        <a class="home-link" href="index.html"
-          >Helene Engelbach <span class="sr-only">(current)</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- collapsed navbar -->
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#yoga">Yoga</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#physio">Physio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#massages">Massages</a>
-            </li>
-          </ul>
-          <div class="nav-right">
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">contact</a>
-            </li>
-          </div>
-        </div>
-      </nav>
-      <div class="nav-smallscreen fadeout">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light top">
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./images/logo.jpg" alt="" width="60px" height="60px"
+      /></a>
+      <a class="home-link" href="index.html"
+        >Helene Engelbach <span class="sr-only">(current)</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- collapsed navbar -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#yoga">Yoga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#physio">Physio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#massages">Massages</a>
+          </li>
         </ul>
+        <div class="nav-right">
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">contact</a>
+          </li>
+        </div>
       </div>
-    </header>
+    </nav>
+    <div class="nav-smallscreen fadeout">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
     <!-- about -->
     <section id="about">
@@ -116,8 +126,12 @@
             magnam.
           </p>
         </div>
+        <a href="./index.html" class="to-home"
+          ><i class="fas fa-arrow-circle-left fa-lg"></i
+        ></a>
       </div>
     </section>
+
     <!-- footer -->
     <footer>
       <div class="footer-items">
@@ -139,8 +153,8 @@
       </div>
       <div class="legal">
         <div class="legal-pages">
-          <span class="impressum">Impressum</span>
-          <span class="datenschutz">Datenschutz</span>
+          <a class="impressum" href="#">Impressum</a>
+          <a class="datenschutz" href="#">Datenschutz</a>
         </div>
         <p>Copyright &copy 2020 - Helene Engelbach All Rights Reserved</p>
       </div>
