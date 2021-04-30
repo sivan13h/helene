@@ -535,16 +535,13 @@ footer {
   }
 }
 // contact page -----------------------
-#contact {
-  // overflow: hidden;
-}
 
 // about page ---------------------------------
 
 #about {
   position: relative;
   padding-top: 66px;
-  // overflow: hidden;
+  overflow: hidden;
   &:before {
     position: absolute;
     content: "";

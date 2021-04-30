@@ -442,7 +442,8 @@ footer {
 
 #about {
   position: relative;
-  padding-top: 66px; }
+  padding-top: 66px;
+  overflow: hidden; }
   #about:before {
     position: absolute;
     content: "";
