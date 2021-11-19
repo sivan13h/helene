@@ -46,11 +46,28 @@ toggler.addEventListener("click", () => {
   smallNav.classList.toggle("show");
 });
 
-// window.onscroll = function () {
-//   console.log(window.pageYOffset);
-//   if (window.pageYOffset > 300) {
-//     mainNav.classList.remove("top");
-//   } else {
-//     mainNav.classList.add("top");
-//   }
-// };
+// contact --------------------------
+const formInputs = document.querySelectorAll(".form__field");
+const submitButton = document.querySelector("#submit-button");
+const contactForm = document.querySelector("#contact-form");
+
+(function () {
+  emailjs.init("user_bCXoTC83AQmbcQOnNKyuJ");
+})();
+
+if (contactForm) {
+  window.onload = function () {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      // generate the contact number value
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      emailjs.sendForm("gmail", "contact_form", this);
+      formInputs.forEach((input) => {
+        input.value = "";
+      });
+      alert(
+        "Your message sent successfully! I will reply as soon as possible :)"
+      );
+    });
+  };
+}
