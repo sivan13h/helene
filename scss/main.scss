@@ -16,6 +16,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -728,6 +729,7 @@ footer {
   clear: both;
   text-align: left;
   position: relative;
+
   .title {
     margin-bottom: 0.5em;
     float: left;
@@ -744,7 +746,6 @@ footer {
       border-radius: 100%;
       top: 15%;
       right: -8px;
-      z-index: 99;
     }
     h3 {
       margin: 0;
@@ -752,6 +753,7 @@ footer {
       text-align: center;
       font-weight: 600;
       color: $dark-blue;
+      padding-right: 20px;
     }
     p {
       margin: 0;
@@ -948,15 +950,19 @@ footer {
 
   #about {
     img {
-      width: 100% !important;
+      width: 80% !important;
     }
 
-    p {
+    .about-main {
       font-size: 0.8rem;
       width: 90% !important;
+      margin: 0 auto;
     }
     .to-home {
       top: 70px;
+    }
+    .timeline {
+      width: 100%;
     }
   }
 }
