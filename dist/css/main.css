@@ -405,7 +405,7 @@ a {
     margin: 0 auto; }
   #inspiration .credit {
     display: inline-block;
-    margin: 20px;
+    margin-top: 20px;
     color: black;
     font-size: 1rem;
     font-weight: 500; }
