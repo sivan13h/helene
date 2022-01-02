@@ -13,6 +13,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 70px;
 }
 html {
   scroll-behavior: smooth;
@@ -28,17 +30,12 @@ body {
 
 .navbar,
 .showcase,
-.showcase h1,
-#inspiration {
-  font-family: "Handlee", cursive !important;
-}
-
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: "Quicksand", sans-serif;
+h5 #inspiration {
+  font-family: "Handlee", cursive !important;
 }
 
 a {
@@ -377,12 +374,11 @@ a {
   .card-title {
     position: absolute;
     bottom: 0;
-    height: 40px;
     background: rgba(248, 249, 250, 0.4);
     margin-bottom: 0;
     width: 100%;
     text-align: center;
-    padding-top: 5px;
+    padding: 10px 0;
   }
   .card-text {
     flex: 1;
@@ -419,6 +415,8 @@ a {
 // inspiration ---------------------
 #inspiration {
   position: relative;
+  max-width: 90%;
+  margin: 0 auto;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,16 +812,19 @@ footer {
 
 // Datenschutz
 
-#datenschutz {
+#datenschutz,
+#impressum {
   position: relative;
   padding-top: 66px;
   overflow: hidden;
   border-bottom: none;
+
   .container {
     justify-content: start;
     align-items: start;
     text-align: start;
     border: 0;
+    max-width: 70%;
     h1 {
       align-self: center;
       margin: 20px auto;
@@ -1253,188 +1254,6 @@ footer {
             margin-top: 0px;
             visibility: visible;
             opacity: 1;
-          }
-        }
-      }
-    }
-  }
-}
-
-// mobile menu
-
-.site-mobile-menu {
-  width: 300px;
-  position: fixed;
-  right: 0;
-  z-index: 2000;
-  padding-top: 20px;
-  background: white;
-  height: calc(100vh);
-
-  transform: translateX(110%);
-  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s all ease-in-out;
-
-  .offcanvas-menu & {
-    transform: translateX(0%);
-  }
-
-  .site-mobile-menu-header {
-    width: 100%;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .site-mobile-menu-close {
-      float: right;
-      margin-top: 8px;
-      span {
-        font-size: 30px;
-        display: inline-block;
-        padding-left: 10px;
-        padding-right: 0px;
-        line-height: 1;
-        cursor: pointer;
-        transition: 0.3s all ease;
-        &:hover {
-          color: green;
-        }
-      }
-    }
-    .site-mobile-menu-logo {
-      float: left;
-      margin-top: 10px;
-      margin-left: 0px;
-      a {
-        display: inline-block;
-        text-transform: uppercase;
-        img {
-          max-width: 70px;
-        }
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  .site-mobile-menu-body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    padding: 0 20px 20px 20px;
-
-    height: calc(100vh - 52px);
-    padding-bottom: 150px;
-  }
-  .site-nav-wrap {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    // float: left;
-
-    // width: 100%;
-    // height: 100%;
-    position: relative;
-
-    a {
-      padding: 10px 20px;
-      display: block;
-      position: relative;
-      color: red;
-      &:hover {
-        color: $dark-blue;
-      }
-    }
-    li {
-      position: relative;
-      display: block;
-      .nav-link {
-        &.active {
-          color: $dark-blue;
-        }
-      }
-      &.active {
-        > a {
-          color: $dark-blue;
-        }
-      }
-    }
-    .arrow-collapse {
-      position: absolute;
-      right: 0px;
-      top: 10px;
-      z-index: 20;
-      width: 36px;
-      height: 36px;
-      text-align: center;
-      cursor: pointer;
-      border-radius: 50%;
-      &:hover {
-        background: gray;
-      }
-      &:before {
-        font-size: 12px;
-        z-index: 20;
-        font-family: "icomoon";
-        content: "\f078";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-180deg);
-        transition: 0.3s all ease;
-      }
-      &.collapsed {
-        &:before {
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-    > li {
-      display: block;
-      position: relative;
-      float: left;
-      width: 100%;
-
-      > a {
-        padding-left: 20px;
-        font-size: 20px;
-      }
-      > ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        > li {
-          display: block;
-          > a {
-            padding-left: 40px;
-            font-size: 16px;
-          }
-          > ul {
-            padding: 0;
-            margin: 0;
-            > li {
-              display: block;
-              > a {
-                font-size: 16px;
-                padding-left: 60px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &[data-class="social"] {
-      float: left;
-      width: 100%;
-      margin-top: 30px;
-      padding-bottom: 5em;
-      > li {
-        width: auto;
-        &:first-child {
-          a {
-            padding-left: 15px !important;
           }
         }
       }

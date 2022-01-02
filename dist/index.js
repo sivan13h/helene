@@ -37,14 +37,14 @@ function checkSlide() {
 window.addEventListener("scroll", debounce(checkSlide));
 
 // navbar collapsed ------------
-// const toggler = document.querySelector(".navbar-toggler");
-// const mainNav = document.querySelector(".navbar");
-// const smallNav = document.querySelector(".nav-smallscreen");
+const toggler = document.querySelector(".navbar-toggler");
+const mainNav = document.querySelector(".navbar");
+const smallNav = document.querySelector(".nav-smallscreen");
 
-// toggler.addEventListener("click", () => {
-//   smallNav.classList.toggle("fadeout");
-//   smallNav.classList.toggle("show");
-// });
+toggler.addEventListener("click", () => {
+  smallNav.classList.toggle("fadeout");
+  smallNav.classList.toggle("show");
+});
 
 // contact --------------------------
 const formInputs = document.querySelectorAll(".form__field");
@@ -66,20 +66,8 @@ if (contactForm) {
         input.value = "";
       });
       alert(
-        "Vielen Dank für Ihre E-Mail, ich werde mich so bald wie möglich bei Ihnen melden"
+        "Vielen Dank für deine E-Mail, ich werde mich so bald wie möglich bei dir melden"
       );
     });
   };
 }
-
-// mobile nav
-
-const toggleButton = document.querySelector("#toggle-input");
-
-toggleButton.addEventListener("click", () => {
-  if (toggleButton.checked) {
-    document.querySelector("body").style.overflow = "hidden";
-  } else {
-    document.querySelector("body").style.overflow = "auto";
-  }
-});
