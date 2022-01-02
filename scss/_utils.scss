@@ -1,5 +1,5 @@
 $darker-blue: rgb(23, 58, 83);
-$dark-blue: rgb(43,90,124);
+$dark-blue: rgb(43, 90, 124);
 
 .btn:focus {
   box-shadow: none;
@@ -45,8 +45,7 @@ div > .headline-line {
   border: none;
   border-radius: 3px;
   padding: 12px 20px;
-  margin-top: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
