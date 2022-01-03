@@ -250,7 +250,7 @@ a {
 
   &::before {
     content: "";
-    background: url("../images/showcase-Background.jpg") center;
+    background: url("../images/showcase-Background.webp") center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -322,13 +322,13 @@ a {
   margin-top: 20px;
   button {
     &:nth-child(1) {
-      background: url("../images/Square_3.jpg") center;
+      background: url("../images/Square_3.webp") center;
     }
     &:nth-child(2) {
-      background: url("../images/Square_2.jpg") center;
+      background: url("../images/Square_2.webp") center;
     }
     &:nth-child(3) {
-      background: url("../images/Square_1.jpg") center;
+      background: url("../images/Square_1.webp") center;
     }
   }
 }
@@ -405,7 +405,7 @@ a {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      background: url("../images/read-more.jpg") center;
+      background: url("../images/read-more.webp") center;
       background-size: cover;
       color: white;
     }
@@ -485,7 +485,7 @@ footer {
 
   &::before {
     content: "";
-    background: url("../images/showcase-Background.jpg") center;
+    background: url("../images/showcase-Background.webp") center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -535,7 +535,7 @@ footer {
     content: "";
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.webp");
     right: 70px;
     top: 50px;
     height: 400px;
@@ -696,7 +696,7 @@ footer {
     content: "";
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.webp");
     right: 25px;
     top: 50px;
     height: 550px;

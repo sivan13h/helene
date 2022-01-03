@@ -255,7 +255,7 @@ a {
   height: 100vh; }
   .showcase::before {
     content: "";
-    background: url("../images/showcase-Background.jpg") center;
+    background: url("../images/showcase-Background.webp") center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -312,11 +312,11 @@ a {
   gap: 1rem;
   margin-top: 20px; }
   .yoga-buttons button:nth-child(1) {
-    background: url("../images/Square_3.jpg") center; }
+    background: url("../images/Square_3.webp") center; }
   .yoga-buttons button:nth-child(2) {
-    background: url("../images/Square_2.jpg") center; }
+    background: url("../images/Square_2.webp") center; }
   .yoga-buttons button:nth-child(3) {
-    background: url("../images/Square_1.jpg") center; }
+    background: url("../images/Square_1.webp") center; }
 
 .card-deck {
   display: flex;
@@ -379,7 +379,7 @@ a {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      background: url("../images/read-more.jpg") center;
+      background: url("../images/read-more.webp") center;
       background-size: cover;
       color: white; }
 
@@ -444,7 +444,7 @@ footer {
   border-top: 1px solid rgba(23, 58, 83, 0.1); }
   footer::before {
     content: "";
-    background: url("../images/showcase-Background.jpg") center;
+    background: url("../images/showcase-Background.webp") center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -488,7 +488,7 @@ footer {
     content: "";
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.webp");
     right: 70px;
     top: 50px;
     height: 400px;
@@ -608,7 +608,7 @@ footer {
     content: "";
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.webp");
     right: 25px;
     top: 50px;
     height: 550px;
