@@ -833,8 +833,11 @@ footer {
         text-align: center; }
   .card-deck {
     display: flex;
-    flex-direction: column;
-    gap: 16px; }
+    flex-direction: column; }
+    .card-deck .card {
+      margin-bottom: 16px; }
+      .card-deck .card:last-child {
+        margin-bottom: 0; }
   #about::before {
     right: 0;
     width: 400px;

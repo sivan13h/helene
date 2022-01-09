@@ -1009,7 +1009,12 @@ footer {
   .card-deck {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    .card {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   #about {
