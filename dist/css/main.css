@@ -326,8 +326,7 @@ a {
   overflow: hidden;
   border: solid 2px #173a53;
   padding: 3px;
-  border-radius: 0;
-  margin: 0 !important; }
+  border-radius: 0; }
   .card .card-img-top {
     border-radius: 0;
     position: relative;
