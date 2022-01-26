@@ -1,3 +1,0 @@
-RewriteRule ^page$ /page.html [L,E=LOOP:1]
-RewriteCond %{ENV:REDIRECT_LOOP} !1
-RewriteRule ^page.html$ /page [R=301,L]
